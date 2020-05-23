@@ -22,7 +22,8 @@ gem 'redis', '~> 4.0'
 # Add sidekiq to run background jobs
 gem 'sidekiq'
 gem 'sidekiq-failures', '~> 1.0'
-
+# Add clearbit gem
+gem 'clearbit'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
