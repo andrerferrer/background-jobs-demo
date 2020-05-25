@@ -9,20 +9,19 @@ This is an app to teach how to implement background jobs in rails using the Clea
 Will generate:
 
 ```ruby
+class SteveJob < ApplicationJob
+	# This represents how important this job is
+	queue_as :default
 
-	class SteveJob < ApplicationJob
-		# This represents how important this job is
-		queue_as :default
-
-		def perform
-			# here we need to actually write the code
-			puts "I'm starting the Steve job"
-			sleep 3
-			puts "Let's watch a video -> https://www.youtube.com/watch?v=s9E6XfJPAMM"
-			sleep 3
-			puts "Stay hungry; stay foolish!\nWe're good to go!"
-		end
+	def perform
+		# here we need to actually write the code
+		puts "I'm starting the Steve job"
+		sleep 3
+		puts "Let's watch a video -> https://www.youtube.com/watch?v=s9E6XfJPAMM"
+		sleep 3
+		puts "Stay hungry; stay foolish!\nWe're good to go!"
 	end
+end
 ```
 
 ### 2. Call the job
