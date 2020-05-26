@@ -1,6 +1,10 @@
 ## Goal
 This is an app to teach how to implement background jobs in rails using the ClearBit enhancement API
 
+## Prerequisites
+To proper use this app, you need to configure your `.env` and add your `CLEARBIT_API_KEY=???`
+You'll also need `Redis` and `Sidekiq` ready 😎
+
 ## How to
 ### 1. Generate the job
 
